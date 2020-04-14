@@ -3,5 +3,5 @@ Note: automatically using hardware breakpoints for read-only addresses.
 ======================================================
 Running all tests..."
 
-"Full Tank => PORTC: 0x3F"..."Full Tank => PORTC: 0x3F"..."Half Tank => PORTC: 0x3C"..."Below Half Tank => PORTC: 0x3C"...======================================================
+"Key, Person, Seatbelt => PORTC: 0x70"..."Key, Person, !Seatbelt => PORTC: 0xF0"..."Key, !Person, !Seatbelt => PORTC: 0x70"...======================================================
 Remote doesn't know how to detach
