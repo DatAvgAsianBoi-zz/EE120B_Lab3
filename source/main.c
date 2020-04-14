@@ -23,7 +23,7 @@ int main(void) {
       // DDRC = 0xFF; PORTC = 0x00;
       DDRD = 0x00; PORTD = 0xFF;
       /* Insert your solution below */
-      unsigned char weight = 0;
+      unsigned short weight = 0;
       while (1) {
             PORTB = PINB & 0x01;
             weight = PIND << 1;
