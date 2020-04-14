@@ -25,13 +25,16 @@ int main(void) {
       /* Insert your solution below */
       unsigned short weight = 0;
       while (1) {
-            PORTB = PINB & 0x01;
-            weight = PIND << 1;
-            weight = weight | (PINB & 0x01);
+            PORTB = 0x00;
+            weight = PIND;
+            weight *= 2;
+            if(PINB & 0x01)
+                  weight++;
+
             if(weight > 69)
-                  PORTB = PINB |0x02;
+                  PORTB = PORTB | 0x02;
             else if(weight > 5)
-                  PORTB = PINB | 0x04;
+                  PORTB = PORTB | 0x04;
       }
       return 1;
 }

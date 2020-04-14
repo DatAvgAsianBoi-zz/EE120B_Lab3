@@ -36,20 +36,20 @@ Continue 2
 expect PORTB 0x00
 checkResult
 
-test "PIND: 124, PINB: 0x01 => PORTB: 0x03"
-setPIND 124
+
+test "PIND: 0xFF, PINB: 0x01 => PORTB: 0x02"
+setPIND 0xFF
 setPINB 0x01
 Continue 2
-expect PORTB 0x03
+expect PORTB 0x02
 checkResult
 
-test "Weight = 63 => PORTB: 0x03"
-setPIND 31
+test "PIND: 0x02, PINB: 0x01 => PORTB: 0x00"
+setPIND 0x02
 setPINB 0x01
 Continue 2
-expect PORTB 0x05
+expect PORTB 0x00
 checkResult
-
 
 
 
